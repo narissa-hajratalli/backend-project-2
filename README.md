@@ -60,6 +60,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Test CRUD functionality in Postman| H | 2 hrs | -hr | -hr|
 | Debugging| H | 4 hrs | -hr | -hr|
 | Deployment| H | 2 hrs | -hr | -hr|
+| Total | 23.5 hrs | -hr | -hr | -hr |
 
 
 #### Post MVP
@@ -67,3 +68,4 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | --- | :---: |  :---: | :---: | :---: |
 | Make Mongoose model for Medicaid | L | 1.5 hr | -hr | -hr |
 | Make Mongoose model for providers / mental health providers of color in different locations | L | 1.5 hr | -hr | -hr |
+| Total | 3 hrs | -hr | -hr | -hr |
