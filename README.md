@@ -17,7 +17,7 @@ The purpose of this project is to create a full CRUD application to review diffe
 For the backend application, I plan to have two Mongoose models, one for providers and one for comments, and connect them through a referenced relationship.
 
 ## Time/Priority Matrix 
-- [Graphic]()
+- [Graphic](https://res.cloudinary.com/ds7vqqwb8/image/upload/v1596211308/Project%202%20-%20CRUD%20Application/IMG_1037_xcl0mo.jpg)
 
 |Deliverable	| Status	| Time Spent |
 | --- | :---: |  :---: | 
