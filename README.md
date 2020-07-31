@@ -35,11 +35,12 @@ For the backend application, I plan to have two Mongoose models, one for provide
 ## MVP/Post MVP
 
 #### MVP
-- 
-
+- Create 2 Mongoose models for provider and comments
+- Implement one relationship between provider and comments
+- Create CRUD functionality (Create, Read, Update, and Destroy)
+- Testing CRUD in Postman
 
 #### Post MVP
-- 
 
 
 ## Functional Components
@@ -47,11 +48,21 @@ For the backend application, I plan to have two Mongoose models, one for provide
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| 
+| Create functionality (create a new provider and add a comment) | H | -hr | -hr | -hr|
+| Read functionality (display all the providers and their comments) | H | -hr | -hr | -hr|
+| Update functionality (update provider information, not previous comments) | H | -hr | -hr | -hr|
+| Destroy funcionality (delete previous comments) | H | hrs | -hr | -hr|
+| Make Mongoose model for provider | H | -hr | -hr | -hr|
+| Make Mongoose model for comments | H | -hr | -hr | -hr|
+| Connect provider and comments through a referenced relationship | H | -hr | -hr | -hr|
+| Test CRUD functionality in Postman| H | -hr | -hr | -hr|
+| Debugging| H | -hr | -hr | -hr|
+| Test CRUD functionality in Postman| H | -hr | -hr | -hr|
+| Deployment| H | -hr | -hr | -hr|
 
 
 #### Post MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Make the "Projects" section into a gallery view | L | 5 hrs | -hr | -hr|
+|  |  | -hr | -hr | -hr|
 | 
