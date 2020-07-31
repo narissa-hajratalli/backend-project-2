@@ -21,7 +21,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 
 |Deliverable	| Status	| Time Spent |
 | --- | :---: |  :---: | 
-| Day 1: Thurs, July 30th | Project Proposal	| Incomplete |  |
+| Day 1: Thurs, July 30th | Project Proposal | Complete | 8hr |
 | Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	|  |
 | Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Incomplete |  |
 | Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Incomplete | |
@@ -54,9 +54,9 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Read functionality (display all the providers and their comments) | H | 1.5 hr | -hr | -hr|
 | Update functionality (update provider information, not previous comments) | H | 2 hrs | -hr | -hr|
 | Destroy funcionality (delete previous comments) | H | 2 hrs | -hr | -hr|
-| Make Mongoose model for provider | H | 1.5 hr | -hr | -hr|
-| Make Mongoose model for comments | H | 1.5 hr | -hr | -hr|
-| Connect provider and comments through a referenced relationship | H | 1.5 hrs | -hr | -hr|
+| Make Mongoose model for provider | H | 1.5 hr | 30 min | -hr|
+| Make Mongoose model for comments | H | 1.5 hr | 30 min | -hr|
+| Connect provider and comments through a referenced relationship | H | 1.5 hrs | 30 min | -hr|
 | Test CRUD functionality in Postman| H | 2 hrs | -hr | -hr|
 | Debugging| H | 4 hrs | -hr | -hr|
 | Deployment| H | 2 hrs | -hr | -hr|

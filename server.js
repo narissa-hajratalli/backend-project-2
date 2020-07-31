@@ -30,7 +30,7 @@ mongoose.connect(mongoURI, mongoConfigObject, () => {
 
 /////////////////////
 // CORS SECURITY CONFIGURATIONS
-/////////////////////
+///////////////////
 const whitelist = [
     "http://localhost:3000/",
     "http://localhost:3000",
