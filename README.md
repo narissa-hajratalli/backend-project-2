@@ -49,6 +49,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Research and Development| H | 4 hrs | -hr | -hr|
 | Create functionality (create a new provider and add a comment) | H | 1.5 hr | -hr | -hr|
 | Read functionality (display all the providers and their comments) | H | 1.5 hr | -hr | -hr|
 | Update functionality (update provider information, not previous comments) | H | 2 hrs | -hr | -hr|
