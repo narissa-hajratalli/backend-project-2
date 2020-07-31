@@ -4,9 +4,10 @@
 require("dotenv").config();
 const express = require("express"); //bringing in the express library
 const app = express();
-const mongoose = require("./db"); //Importing Connection
+// const mongoose = require("./db"); //Importing Connection
 const cors = require("cors");
-const morgan = require('morgan')
+const morgan = require('morgan');
+const mongoose = require("mongoose");
 
 /////////////////
 //GLOBAL VARIABLES
@@ -50,7 +51,7 @@ const whitelist = [
 //UTILITY FUNCTIONS THAT RUN BEFORE YOUR ROUTES
 NODE_ENV === "development" ? app.use(cors()) : app.use(cors(corsOptions)); //ternary operator
 // Enables websites in whitelist to make API calls to your server, enables all sites in development
-app.use(express.json()); //Turns JSON from post/put/patch requests and converts them into req.body object
+app.use(express.json()); //When you send JSON data to your API, this interprets the JSON data and looks in the body of your request. Parses data and uses it in your body 
 app.use(morgan("dev")); // Enables Morgan logging, creating more useful terminal logs while server runs
 app.use(express.static("public")); //Allows static serving of files from public folder
 
