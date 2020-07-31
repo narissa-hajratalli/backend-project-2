@@ -26,9 +26,9 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Day 3: Sat, August 1st, 2020 | Backend: | Incomplete |  |
 | Day 4: Sun, August 2nd, 2020 | Backend: | Incomplete | |
 | Day 5: Mon, August 3rd, 2020 | Backend: Deployment | Incomplete | |
-| Day 6: Tues, August 4th, 2020 | Frontend: | Incomplete | |
-| Day 7: Wed, August 5th, 2020 | Frontend: | Incomplete | |
-| Day 8: Tues, August 6th, 2020 | Frontend: | Incomplete | |
+| Day 6: Tues, August 4th, 2020 | Frontend: Basic HTML/CSS/jQuery build (mobile first) | Incomplete | |
+| Day 7: Wed, August 5th, 2020 | Frontend: Hamburger menu and deploy | Incomplete | |
+| Day 8: Tues, August 6th, 2020 | Frontend: Cross-browser testing and final touches  | Incomplete | |
 | Day 9: Tues, August 7th, 2020 | Presentation | Incomplete | |
 
 
