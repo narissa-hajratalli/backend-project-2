@@ -12,7 +12,7 @@
 |Day 5| Final Touches and Present | Incomplete
 
 ## Project Description
-The purpose of this project is to create a full CRUD application to review different healthcare providers. The user will have the opportunity to report acts of discrimination they've experienced from providers through comments and those comments will be stored in a database and mapped to each provider. The inspiration for this appliaction is that People of Color are, statistically, overlooked by providers and experience discrimination in the healthcare industry.
+The purpose of this project is to create a full CRUD application to review different healthcare providers. The user will have the opportunity to report acts of discrimination they've experienced from providers through comments and those comments will be stored in a database and mapped to each provider. The inspiration for this appliaction is that people of color are, statistically, overlooked by providers and experience discrimination in the healthcare industry.
 
 For the backend application, I plan to have two Mongoose models, one for providers and one for comments, and connect them through a referenced relationship.
 
@@ -41,28 +41,27 @@ For the backend application, I plan to have two Mongoose models, one for provide
 - Testing CRUD in Postman
 
 #### Post MVP
-
+- Create backend database for providers that accept Medicaid
+- Create a database that lists providers of color and providers that speak certain languages.
 
 ## Functional Components
 
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create functionality (create a new provider and add a comment) | H | -hr | -hr | -hr|
-| Read functionality (display all the providers and their comments) | H | -hr | -hr | -hr|
-| Update functionality (update provider information, not previous comments) | H | -hr | -hr | -hr|
-| Destroy funcionality (delete previous comments) | H | hrs | -hr | -hr|
-| Make Mongoose model for provider | H | -hr | -hr | -hr|
-| Make Mongoose model for comments | H | -hr | -hr | -hr|
-| Connect provider and comments through a referenced relationship | H | -hr | -hr | -hr|
-| Test CRUD functionality in Postman| H | -hr | -hr | -hr|
-| Debugging| H | -hr | -hr | -hr|
-| Test CRUD functionality in Postman| H | -hr | -hr | -hr|
-| Deployment| H | -hr | -hr | -hr|
+| Create functionality (create a new provider and add a comment) | H | 1.5 hr | -hr | -hr|
+| Read functionality (display all the providers and their comments) | H | 1.5 hr | -hr | -hr|
+| Update functionality (update provider information, not previous comments) | H | 2 hrs | -hr | -hr|
+| Destroy funcionality (delete previous comments) | H | 2 hrs | -hr | -hr|
+| Make Mongoose model for provider | H | 1.5 hr | -hr | -hr|
+| Make Mongoose model for comments | H | 1.5 hr | -hr | -hr|
+| Connect provider and comments through a referenced relationship | H | 1.5 hrs | -hr | -hr|
+| Test CRUD functionality in Postman| H | 2 hrs | -hr | -hr|
+| Debugging| H | 4 hrs | -hr | -hr|
+| Deployment| H | 2 hrs | -hr | -hr|
 
 
 #### Post MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-|  |  | -hr | -hr | -hr|
-| 
+| Make Mongoose model for Medicaid | L | 1.5 hr | -hr | -hr |
+| Make Mongoose model for providers of color | L | 1.5 hr | -hr | -hr |
