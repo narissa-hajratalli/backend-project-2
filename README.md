@@ -66,4 +66,4 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Make Mongoose model for Medicaid | L | 1.5 hr | -hr | -hr |
-| Make Mongoose model for providers of color | L | 1.5 hr | -hr | -hr |
+| Make Mongoose model for providers / mental health providers of color in different locations | L | 1.5 hr | -hr | -hr |
