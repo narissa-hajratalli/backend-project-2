@@ -23,7 +23,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | --- | :---: |  :---: | 
 | Day 1: Thurs, July 30th | Project Proposal | Complete | 8hr |
 | Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	|  |
-| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Incomplete |  |
+| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 2 hrs |
 | Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Incomplete | |
 | Day 5: Mon, August 3rd, 2020 | Backend: Basic frontend build & have frontend consume API | Incomplete | |
 | Day 6: Tues, August 4th, 2020 | Frontend: Frontend build (mobile first) | Incomplete | |
@@ -59,7 +59,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Connect provider and comments through a referenced relationship | H | 1.5 hrs | 30 min | -hr|
 | Test CRUD functionality in Postman| H | 2 hrs | -hr | -hr|
 | Debugging| H | 4 hrs | -hr | -hr|
-| Deployment| H | 2 hrs | -hr | -hr|
+| Deployment| H | 2 hrs | 45 mins | -hr|
 | Total | 23.5 hrs | -hr | -hr | -hr |
 
 

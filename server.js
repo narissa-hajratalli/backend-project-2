@@ -8,6 +8,14 @@ const app = express();
 const cors = require("cors");
 const morgan = require('morgan');
 const mongoose = require("mongoose");
+const Provider = require('./models/providers.js');
+const Comment = require('./models/comments.js');
+
+/////////////////
+//IMPORT ROUTERS
+////////////////
+
+
 
 /////////////////
 //GLOBAL VARIABLES
@@ -23,9 +31,10 @@ const mongoConfigObject = { useNewUrlParser: true, useUnifiedTopology: true }; /
 //CONNECT TO DATABASE
 ///////////////////////////
 // Code for connecting to our mongo database
-mongoose.connect(mongoURI, mongoConfigObject, () => {
+const db = mongoose.Connection
+mongoose.connect(mongoURI, mongoConfigObject, (err) => {
     console.log("CONNECTED TO MONGO");
-  });
+  }); //This function actually connects to the db
   
 
 /////////////////////
@@ -50,14 +59,10 @@ const whitelist = [
 ////////////////////
 //UTILITY FUNCTIONS THAT RUN BEFORE YOUR ROUTES
 NODE_ENV === "development" ? app.use(cors()) : app.use(cors(corsOptions)); //ternary operator
-// Enables websites in whitelist to make API calls to your server, enables all sites in development
+//Enables websites in whitelist to make API calls to your server, enables all sites in development
 app.use(express.json()); //When you send JSON data to your API, this interprets the JSON data and looks in the body of your request. Parses data and uses it in your body 
-app.use(morgan("dev")); // Enables Morgan logging, creating more useful terminal logs while server runs
+app.use(morgan("dev")); //Enables Morgan logging, creating more useful terminal logs while server runs, helps for finding errors
 app.use(express.static("public")); //Allows static serving of files from public folder
-
-/////////////////
-//ROUTES (move to the routes folder later)
-/////////////////
 
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
