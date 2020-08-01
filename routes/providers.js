@@ -1,6 +1,6 @@
 const express = require('express');
 const ProviderRouter = express.Router();
-const { index, create, update, destroy } = require('../controllers/providers.js')
+const { index, create, update } = require('../controllers/providers.js')
 
 //CREATE - creates a new provider
 ProviderRouter.post('/', create);
@@ -9,17 +9,6 @@ ProviderRouter.post('/', create);
 ProviderRouter.get('/', index);
 
 //UPDATE - update provider information
-ProviderRouter.put('/:providerinfo', update);
+ProviderRouter.put('/:providerid', update);
 
-module.exports = ProviderRouter
-
-
-
-
-
-
-
-
-
-//Export routes
-modules.exports = ProviderRouter;
+module.exports = ProviderRouter;

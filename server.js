@@ -9,13 +9,12 @@ const cors = require("cors");
 const morgan = require('morgan');
 const mongoose = require("mongoose");
 const Provider = require('./models/providers.js');
-const Comment = require('./models/comments.js');
+// const Comment = require('./models/comments.js');
 
 /////////////////
-//IMPORT ROUTERS
+//ROUTERS
 ////////////////
-
-
+const ProviderRouter = require('./routes/providers.js');
 
 /////////////////
 //GLOBAL VARIABLES
@@ -23,19 +22,24 @@ const Comment = require('./models/comments.js');
 const PORT = process.env.PORT; //port number for server as defined in environment variables
 const NODE_ENV = process.env.NODE_ENV; //"development" or "production"
 const mongoURI = process.env.mongoURI + "test1"; //URI for connecting to database specified in .env
-// const db = mongoose.connection; //the mongoose connection object
+const db = mongoose.connection; //the mongoose connection object
 const mongoConfigObject = { useNewUrlParser: true, useUnifiedTopology: true }; //Config option to eliminate deprecation warnings
-
 
 ///////////////////////////
 //CONNECT TO DATABASE
 ///////////////////////////
 // Code for connecting to our mongo database
-const db = mongoose.Connection
-mongoose.connect(mongoURI, mongoConfigObject, (err) => {
+mongoose.connect(mongoURI, mongoConfigObject, () => {
     console.log("CONNECTED TO MONGO");
   }); //This function actually connects to the db
-  
+
+////////////////////////////
+//CONNECTION MESSAGING
+///////////////////////////
+//Building in messages so we know when our database connection changes
+db.on("error", (err) => console.log(err.message + " is Mongod not running?"));
+db.on("connected", () => console.log("mongo connected!"));
+db.on("disconnected", () => console.log("mongo disconnected"));
 
 /////////////////////
 // CORS SECURITY CONFIGURATIONS
@@ -63,6 +67,12 @@ NODE_ENV === "development" ? app.use(cors()) : app.use(cors(corsOptions)); //ter
 app.use(express.json()); //When you send JSON data to your API, this interprets the JSON data and looks in the body of your request. Parses data and uses it in your body 
 app.use(morgan("dev")); //Enables Morgan logging, creating more useful terminal logs while server runs, helps for finding errors
 app.use(express.static("public")); //Allows static serving of files from public folder
+
+///////////////////////////
+//ROUTERS
+///////////////////////////
+//These handle sending responses to server requests for specific endpoints
+app.use('/providers', ProviderRouter);
 
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
