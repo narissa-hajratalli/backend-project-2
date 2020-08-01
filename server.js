@@ -9,12 +9,13 @@ const cors = require("cors");
 const morgan = require('morgan');
 const mongoose = require("mongoose");
 const Provider = require('./models/providers.js');
-// const Comment = require('./models/comments.js');
+const Comment = require('./models/comments.js');
 
 /////////////////
 //ROUTERS
 ////////////////
 const ProviderRouter = require('./routes/providers.js');
+const CommentRouter = require('./routes/comments.js');
 
 /////////////////
 //GLOBAL VARIABLES
@@ -73,6 +74,7 @@ app.use(express.static("public")); //Allows static serving of files from public 
 ///////////////////////////
 //These handle sending responses to server requests for specific endpoints
 app.use('/providers', ProviderRouter);
+app.use('/comments', CommentRouter);
 
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)

@@ -35,7 +35,7 @@ const index = async (req, res) => {
 //UPDATE - update provider information
 const update = async (req, res) => {
     try {
-        const updateProvider = await Provider.findByIdAndUpdate(req.params.id, req.body, {new: true});
+        const updateProvider = await Provider.findOneAndUpdate(req.params.id, req.body, {new: true});
         //Finds the provider by its ID in our Mongo database
         //The URL params will contain the ID of the provider we want to select
 
@@ -45,7 +45,6 @@ const update = async (req, res) => {
         res.status(400).send(error)
     }
 }
-
 
 module.exports = {
     index,

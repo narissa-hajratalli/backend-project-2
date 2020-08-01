@@ -22,7 +22,7 @@ For the backend application, I plan to have two Mongoose models, one for provide
 |Deliverable	| Status	| Time Spent |
 | --- | :---: |  :---: | 
 | Day 1: Thurs, July 30th | Project Proposal | Complete | 8hr |
-| Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	|  |
+| Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	| 2 hrs |
 | Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 2 hrs |
 | Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Incomplete | |
 | Day 5: Mon, August 3rd, 2020 | Backend: Basic frontend build & have frontend consume API | Incomplete | |
@@ -50,9 +50,9 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Research and Development| H | 4 hrs | -hr | -hr|
-| Create functionality (create a new provider and add a comment) | H | 1.5 hr | -hr | -hr|
-| Read functionality (display all the providers and their comments) | H | 1.5 hr | -hr | -hr|
-| Update functionality (update provider information, not previous comments) | H | 2 hrs | -hr | -hr|
+| Create functionality (create a new provider and add a comment) | H | 1.5 hrs | 1.5 hrs | -hr|
+| Read functionality (display all the providers and their comments) | H | 1.5 hr | 1.5 hrs| -hr|
+| Update functionality (update provider information, not previous comments) | H | 2 hrs | 2 hrs | -hr|
 | Destroy funcionality (delete previous comments) | H | 2 hrs | -hr | -hr|
 | Make Mongoose model for provider | H | 1.5 hr | 30 min | -hr|
 | Make Mongoose model for comments | H | 1.5 hr | 30 min | -hr|
