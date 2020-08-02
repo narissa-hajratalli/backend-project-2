@@ -4,7 +4,6 @@
 require("dotenv").config();
 const express = require("express"); //bringing in the express library
 const app = express();
-// const mongoose = require("./db"); //Importing Connection
 const cors = require("cors");
 const morgan = require('morgan');
 const mongoose = require("mongoose");
