@@ -50,15 +50,15 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Research and Development| H | 4 hrs | -hr | -hr|
-| Create functionality (create a new provider and add a comment) | H | 1.5 hrs | 1.5 hrs | -hr|
+| Create functionality (create a new provider and add a comment) | H | 1.5 hrs | 2 hrs | -hr|
 | Read functionality (display all the providers and their comments) | H | 1.5 hr | 1.5 hrs| -hr|
 | Update functionality (update provider information, not previous comments) | H | 2 hrs | 2 hrs | -hr|
 | Destroy funcionality (delete previous comments) | H | 2 hrs | -hr | -hr|
 | Make Mongoose model for provider | H | 1.5 hr | 30 min | -hr|
-| Make Mongoose model for comments | H | 1.5 hr | 30 min | -hr|
-| Connect provider and comments through a referenced relationship | H | 1.5 hrs | 30 min | -hr|
-| Test CRUD functionality in Postman| H | 2 hrs | -hr | -hr|
-| Debugging| H | 4 hrs | -hr | -hr|
+| Make Mongoose model for comments | H | 1.5 hrs | 1 hr | -hr|
+| Connect provider and comments through a referenced relationship | H | 1.5 hrs | 2 hrs | -hr|
+| Test CRUD functionality in Postman| H | 2 hrs | 1 hr | -hr|
+| Debugging| H | 4 hrs | 1 hr | -hr|
 | Deployment| H | 2 hrs | 45 mins | -hr|
 | Total | 23.5 hrs | -hr | -hr | -hr |
 
@@ -67,5 +67,6 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Make Mongoose model for Medicaid | L | 1.5 hr | -hr | -hr |
+| Connect Medicaid Mongoose model to provider's model | L | 1.5 hr | -hr | -hr |
 | Make Mongoose model for providers / mental health providers of color in different locations | L | 1.5 hr | -hr | -hr |
 | Total | 3 hrs | -hr | -hr | -hr |

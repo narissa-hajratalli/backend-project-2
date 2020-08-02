@@ -10,7 +10,7 @@ const providerSchema = new Schema({
     acceptsMedicaid: { type: Boolean },
     comments: [{
         type: Schema.Types.ObjectId,
-        ref: 'Comment' 
+        ref: "comments" 
     }]
 }, { timestamps: true } )
 

@@ -1,11 +1,15 @@
 const express = require('express');
 const CommentRouter = express.Router();
-const { create, destroy } = require('../controllers/comments.js')
+const { index, create, destroy } = require('../controllers/comments.js')
 
-//READ - shows all providers
+
+//CREATE - create a new comment
 CommentRouter.post('/', create);
 
-//UPDATE - update provider information
+//READ - show all comments
+CommentRouter.get('/', index);
+
+//DELETE - delete comment
 CommentRouter.delete('/:providerid', destroy);
 
 module.exports = CommentRouter;
