@@ -10,6 +10,6 @@ CommentRouter.post('/', create);
 CommentRouter.get('/', index);
 
 //DELETE - delete comment
-CommentRouter.delete('/:providerid', destroy);
+CommentRouter.delete('/:commentid', destroy);
 
 module.exports = CommentRouter;

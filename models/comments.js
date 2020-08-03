@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const commentSchema = new Schema ({
-    providerId:[{
-            type: Schema.Types.ObjectId,
-            ref: "providers"
-        }],
+    // providerid:[{
+    //         type: Schema.Types.ObjectId,
+    //         ref: "providers"
+    //     }],
     comment: { type: String, required: true },
     commenterName: { type: String, required: true }
 }, { timestamps: true })
