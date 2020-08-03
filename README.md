@@ -5,8 +5,8 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Incomplete
-|Day 2| Working RestAPI | Incomplete
+|Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Complete
+|Day 2| Working RestAPI | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches and Present | Incomplete
@@ -23,8 +23,8 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | --- | :---: |  :---: | 
 | Day 1: Thurs, July 30th | Project Proposal | Complete | 8hr |
 | Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	| 2 hrs |
-| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 2 hrs |
-| Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Incomplete | |
+| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 3 hrs |
+| Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Complete | 8 hrs |
 | Day 5: Mon, August 3rd, 2020 | Backend: Basic frontend build & have frontend consume API | Incomplete | |
 | Day 6: Tues, August 4th, 2020 | Frontend: Frontend build (mobile first) | Incomplete | |
 | Day 7: Wed, August 5th, 2020 | Frontend: Hamburger menu and deploy | Incomplete | |
@@ -56,10 +56,10 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | Destroy funcionality (delete previous comments) | H | 2 hrs | 1.5 hrs | -hr|
 | Make Mongoose model for provider | H | 1.5 hr | 1.5 hrs | -hr|
 | Make Mongoose model for comments | H | 1.5 hrs | 2 hr | -hr|
-| Connect provider and comments through a referenced relationship | H | 1.5 hrs | 3 hrs | -hr|
-| Test CRUD functionality in Postman| H | 2 hrs | 1 hr | -hr|
-| Debugging| H | 4 hrs | 2 hr | -hr|
-| Deployment| H | 2 hrs | 45 mins | -hr|
+| Connect provider and comments through a referenced relationship | H | 1.5 hrs | 5 hrs | -hr|
+| Test CRUD functionality in Postman| H | 2 hrs | 3 hrs | -hr|
+| Debugging| H | 4 hrs | 4 hrs | -hr|
+| Deployment| H | 2 hrs | 2 hrs | -hr|
 | Total | 23.5 hrs | -hr | -hr | -hr |
 
 
