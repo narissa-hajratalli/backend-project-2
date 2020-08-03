@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'); //require brinds in all functions that lives in the Mongoose object
-const { Schema } = mongoose; //destructuring allows us to only pull out certain functions & classes that we need
+const { Schema, model } = mongoose; //destructuring allows us to only pull out certain functions & classes that we need
 
 const providerSchema = new Schema({
     picture: { type: String }, // This will be a url to display the provider's picture; it will be optional
@@ -10,9 +10,10 @@ const providerSchema = new Schema({
     acceptsMedicaid: { type: Boolean },
     comments: [{
         type: Schema.Types.ObjectId,
-        ref: "comments" 
+        ref: "Comment" 
     }]
 }, { timestamps: true } )
+
 
 module.exports = mongoose.model('Provider', providerSchema) 
 //Keep the model name capital and singular

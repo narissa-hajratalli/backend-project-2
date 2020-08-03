@@ -4,7 +4,7 @@ const { index, create, destroy } = require('../controllers/comments.js')
 
 
 //CREATE - create a new comment
-CommentRouter.post('/:providerid', create);
+CommentRouter.post('/', create);
 
 //READ - show all comments
 CommentRouter.get('/', index);

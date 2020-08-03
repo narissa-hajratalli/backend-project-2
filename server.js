@@ -21,14 +21,13 @@ const CommentRouter = require('./routes/comments.js');
 /////////////////
 const PORT = process.env.PORT; //port number for server as defined in environment variables
 const NODE_ENV = process.env.NODE_ENV; //"development" or "production"
-const mongoURI = process.env.mongoURI + "healthcare"; //URI for connecting to database specified in .env
-const db = mongoose.connection; //the mongoose connection object
+const mongoURI = process.env.mongoURI; //URI for connecting to database specified in .env
+
+//MONGOOSE CONNECTION
+const db = mongoose.connection; //the mongoose connection object, represents the state of your connection
 const mongoConfigObject = { useNewUrlParser: true, useUnifiedTopology: true }; //Config option to eliminate deprecation warnings
 
-///////////////////////////
-//CONNECT TO DATABASE
-///////////////////////////
-// Code for connecting to our mongo database
+//CONNECTS TO THE MONGOOSE DATABASE - Code for connecting to our mongo database
 mongoose.connect(mongoURI, mongoConfigObject, () => {
     console.log("CONNECTED TO MONGO");
   }); //This function actually connects to the db

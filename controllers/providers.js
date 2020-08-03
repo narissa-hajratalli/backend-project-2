@@ -23,7 +23,7 @@ const create = async (req, res) => {
 // READ - list all providers
 const index = async (req, res) => {
     try {
-        const allProviders = await Provider.find({}); 
+        const allProviders = await Provider.find({}).populate('comments'); 
         //This queries for all the providers, waits until the query is over
         
         res.status(200).json(allProviders);

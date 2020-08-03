@@ -1,24 +1,31 @@
 const Comment = require('../models/comments.js');
 const Provider = require('../models/providers.js');
+const mongoose = require('mongoose');
+const objectify = mongoose.Types.ObjectId;
 
 //CREATE - create a new comment
 const create = async (req, res) => {
     try {
         //This waits for the user to input their comment and it is added to the body of the request
+        req.body.providerid = objectify(req.body.providerid);
         const newComment = await Comment.create(req.body);
         // console.log(newComment)
+        console.count()
 
         //This queries for the provider's entry in the collection
-        let currentProvider = await Provider.findOne({_id: req.params.providerid}).populate('comment'); 
-        // console.log(currentProvider)
+        let currentProvider = await Provider.findOne({_id: req.body.providerid}).populate('comments'); 
+        console.log(currentProvider)
+        console.count()
 
         //This pushes the new comment into the "comments" property in the provider schema
         await currentProvider.comments.push(newComment._id);
-        // console.log(currentProvider)
+        console.log(currentProvider)
+        console.count()
 
         //This saves the comment to that provider
         await currentProvider.save();
         // console.log(newComment)
+        console.count()
 
         res.status(200).json(newComment) 
     }
@@ -30,7 +37,7 @@ const create = async (req, res) => {
 //READ - show all comments, using for testing purposes
 const index = async (req, res) => {
     try {
-        const allComment = await Comment.find({})
+        const allComment = await Comment.find({}).populate('providerid')
         res.status(200).json(allComment)
     }
     catch(error) {
