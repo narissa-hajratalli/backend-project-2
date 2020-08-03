@@ -9,7 +9,7 @@ const create = async (req, res) => {
         // console.log(newComment)
 
         //This queries for the provider's entry in the collection
-        let currentProvider = await Provider.findOne({_id: req.params.providerid}).populate(); 
+        let currentProvider = await Provider.findOne({_id: req.params.providerid}).populate('comment'); 
         // console.log(currentProvider)
 
         //This pushes the new comment into the "comments" property in the provider schema
