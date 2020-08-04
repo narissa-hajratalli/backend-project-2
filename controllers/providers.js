@@ -6,9 +6,6 @@ const create = async (req, res) => {
         const createProviders = await Provider.create(req.body);
         //We are adding the request, aka the new provider, to the "body" of the request
 
-        //const allProviders = await Provider.find({});
-        //This queries for all the providers after the new one is added
-
         res.status(200).json(createProviders) 
         //This returns the updated list to JSON data
     }
@@ -32,10 +29,23 @@ const index = async (req, res) => {
     }
 }
 
+//READ - list one provider 
+const getById = async (req, res) => {
+    try {
+        console.log(req.params)
+        const oneProvider = await Provider.findById(req.params.providerid);
+        res.status(200).json(oneProvider);
+    }
+    catch(error) {
+        res.status(400).send(error);
+    }
+}
+
+
 //UPDATE - update provider information
 const update = async (req, res) => {
     try {
-        const updateProvider = await Provider.findOneAndUpdate(req.params.id, req.body, {new: true});
+        const updateProvider = await Provider.findOneAndUpdate(req.params.providerid, req.body, {new: true});
         //Finds the provider by its ID in our Mongo database
         //The URL params will contain the ID of the provider we want to select
 
@@ -48,6 +58,7 @@ const update = async (req, res) => {
 
 module.exports = {
     index,
+    getById,
     create,
     update
 }

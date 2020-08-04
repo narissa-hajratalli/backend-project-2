@@ -3,7 +3,7 @@ const { Schema, model } = mongoose; //destructuring allows us to only pull out c
 
 const providerSchema = new Schema({
     picture: { type: String }, // This will be a url to display the provider's picture; it will be optional
-    firstName: { type: String }, // Provider's first name will be optional
+    firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     providerType: { type: String, required: true },
     specialty: { type: String, required: true },
@@ -18,3 +18,6 @@ const providerSchema = new Schema({
 module.exports = mongoose.model('Provider', providerSchema) 
 //Keep the model name capital and singular
 //In Mongo, the collection will become lowercase and plural--in this case 'providers'
+
+
+
