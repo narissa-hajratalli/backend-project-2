@@ -45,7 +45,7 @@ const getById = async (req, res) => {
 //UPDATE - update provider information
 const update = async (req, res) => {
     try {
-        const updateProvider = await Provider.findOneAndUpdate(req.params.providerid, req.body, {new: true});
+        const updateProvider = await Provider.findByIdAndUpdate(req.params.providerid, req.body, {new: true});
         //Finds the provider by its ID in our Mongo database
         //The URL params will contain the ID of the provider we want to select
 

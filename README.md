@@ -7,7 +7,7 @@
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Complete
 |Day 2| Working RestAPI | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches and Present | Incomplete
 
@@ -23,9 +23,9 @@ For the backend application, I plan to have two Mongoose models, one for provide
 | --- | :---: |  :---: | 
 | Day 1: Thurs, July 30th | Project Proposal | Complete | 8hr |
 | Day 2: Fri, July 31st, 2020 | Research & Development	| Incomplete	| 2 hrs |
-| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 3 hrs |
+| Day 3: Sat, August 1st, 2020 | Backend: Build server & create Mongoose models | Complete | 5 hrs |
 | Day 4: Sun, August 2nd, 2020 | Backend: Complete backend, deployment, and test with Postman | Complete | 8 hrs |
-| Day 5: Mon, August 3rd, 2020 | Backend: Basic frontend build & have frontend consume API | Incomplete | |
+| Day 5: Mon, August 3rd, 2020 | Backend: Basic frontend build & have frontend consume API | Complete | 10 hrs |
 | Day 6: Tues, August 4th, 2020 | Frontend: Frontend build (mobile first) | Incomplete | |
 | Day 7: Wed, August 5th, 2020 | Frontend: Hamburger menu and deploy | Incomplete | |
 | Day 8: Tues, August 6th, 2020 | Frontend: Cross-browser testing and final touches  | Incomplete | |
