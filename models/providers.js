@@ -7,7 +7,7 @@ const providerSchema = new Schema({
     lastName: { type: String, required: true },
     providerType: { type: String, required: true },
     specialty: { type: String, required: true },
-    acceptsMedicaid: { type: Boolean },
+    // acceptsMedicaid: { type: Boolean }, <- this is post MVP
     comments: [{
         type: Schema.Types.ObjectId,
         ref: "Comment" 

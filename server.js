@@ -44,8 +44,10 @@ db.on("disconnected", () => console.log("mongo disconnected"));
 // CORS SECURITY CONFIGURATIONS
 ///////////////////
 const whitelist = [
-    "http://localhost:3000/",
+    "http://example2.com/",
     "http://localhost:3000",
+    "https://thecolorofcare.herokuapp.com",
+    "http://thecolorofcare.herokuapp.com"
   ];
   const corsOptions = function (req, callback) {
     var corsOptions;
@@ -73,6 +75,7 @@ app.use(express.static("public")); //Allows static serving of files from public 
 //These handle sending responses to server requests for specific endpoints
 app.use('/providers', ProviderRouter);
 app.use('/comments', CommentRouter);
+app.use(cors(corsOptions))
 
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
