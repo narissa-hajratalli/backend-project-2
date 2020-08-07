@@ -1,3 +1,7 @@
+//GENERAL RESOURCES
+//Resource 1: https://git.generalassemb.ly/SEIR-629/W05-D03-HW-Lab
+//Resource 2: https://git.generalassemb.ly/SEIR-629/Mongoose-Multi-Models/blob/master/instructor-notes/api.md 
+
 /////////////////
 //DEPENDENCIES
 /////////////////
