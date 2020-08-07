@@ -8,8 +8,8 @@
 |Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Complete
 |Day 2| Working RestAPI | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches and Present | Complete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches and Present | Incomplete
 
 ## Project Description
 The purpose of this project is to create a full CRUD application to review different healthcare providers. The user will have the opportunity to report acts of discrimination they've experienced from providers through comments and those comments will be stored in a database and mapped to each provider. The inspiration for this appliaction is that people of color are, statistically, overlooked by providers and experience discrimination in the healthcare industry.
@@ -86,22 +86,71 @@ For the backend application, I plan to have two Mongoose models, one for provide
 
 ## Code Snippets
 
-
-#### 
+#### Creating both a read all and read one function for the providers model
+It was necessary to have both a read one and a read all function because in order to list one provider's information, I needed to get the provider by its individual object ID.
 
 ```
+// READ - list all providers
+const index = async (req, res) => {
+    try {
+        //This queries for all the providers, waits until the query is over
+        const allProviders = await Provider.find({}).populate('comments'); 
+        
+        //This stores the queried data as a variable, and returns it as JSON data
+        res.status(200).json(allProviders);
+    } 
+    catch(error) {
+        res.status(400).send(error);
+    }
+}
 
+//READ - list one provider 
+const getById = async (req, res) => {
+    try {
+        const oneProvider = await Provider.findById(req.params.providerid).populate('comments');
+        res.status(200).json(oneProvider);
+    }
+    catch(error) {
+        res.status(400).send(error);
+    }
+}
 ```
 
 
 ## Issues and Resolutions
  
- 
 #### 
-Issue: 
+Issue: Connecting my provider scheme and my comment schema so when the user creates a comment, it is correctly mapped to the right provider. My biggest issue was that although the comments were mapped correctly, they were populating with their object ID in the provider model, instead of as a string.
 
-Resolution: 
+Resolution: I had to use objectify to turn the body of the request into an object so it could properly populate into my provider model. 
 
 ```
+const objectify = mongoose.Types.ObjectId;
+
+//CREATE - create a new comment
+const create = async (req, res) => {
+    try {
+        
+        //This turns the request body into an object
+        req.body.providerid = objectify(req.body.providerid);
+        
+        //This waits for the user to input their comment and it is added to the body of the request
+        const newComment = await Comment.create(req.body);
+
+        //This queries for the provider's entry in the collection
+        let currentProvider = await Provider.findOne({_id: req.body.providerid}).populate('comments'); 
+
+        //This pushes the new comment into the "comments" property in the provider schema
+        await currentProvider.comments.push(newComment._id);
+
+        //This saves the comment to that provider
+        await currentProvider.save();
+
+        res.status(200).json(newComment) 
+    }
+    catch(error){
+        res.status(400).send(error)
+    }
+}
 
 ```
