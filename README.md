@@ -83,6 +83,39 @@ For the backend application, I plan to have two Mongoose models, one for provide
  
  - Cors: For security purposes
  
+## JSON Data Example
+```
+    {
+        "comments": [
+            {
+                "_id": "5f2cd1fd9d8e3b0017822b43",
+                "providerid": "5f2ca3186519a800172e82fd",
+                "comment": "New Comment",
+                "commenterName": "Anon",
+                "createdAt": "2020-08-07T04:01:01.511Z",
+                "updatedAt": "2020-08-07T04:01:01.511Z",
+                "__v": 0
+            },
+            {
+                "_id": "5f2cd2679d8e3b0017822b45",
+                "providerid": "5f2ca3186519a800172e82fd",
+                "comment": "Another New Comment",
+                "commenterName": "Anon",
+                "createdAt": "2020-08-07T04:02:47.348Z",
+                "updatedAt": "2020-08-07T04:02:47.348Z",
+                "__v": 0
+            }
+        ],
+        "_id": "5f2ca3186519a800172e82fd",
+        "firstName": "May",
+        "lastName": "Smith",
+        "providerType": "MD",
+        "specialty": "Psychiatry",
+        "createdAt": "2020-08-07T00:40:56.753Z",
+        "updatedAt": "2020-08-07T04:02:47.365Z",
+        "__v": 2
+    }
+ ```
 
 ## Code Snippets
 
