@@ -32,7 +32,6 @@ const index = async (req, res) => {
 //READ - list one provider 
 const getById = async (req, res) => {
     try {
-        console.log(req.params)
         const oneProvider = await Provider.findById(req.params.providerid).populate('comments');
         res.status(200).json(oneProvider);
     }

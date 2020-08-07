@@ -9,23 +9,15 @@ const create = async (req, res) => {
         //This waits for the user to input their comment and it is added to the body of the request
         req.body.providerid = objectify(req.body.providerid);
         const newComment = await Comment.create(req.body);
-        // console.log(newComment)
-        console.count()
 
         //This queries for the provider's entry in the collection
         let currentProvider = await Provider.findOne({_id: req.body.providerid}).populate('comments'); 
-        console.log(currentProvider)
-        console.count()
 
         //This pushes the new comment into the "comments" property in the provider schema
         await currentProvider.comments.push(newComment._id);
-        console.log(currentProvider)
-        console.count()
 
         //This saves the comment to that provider
         await currentProvider.save();
-        // console.log(newComment)
-        console.count()
 
         res.status(200).json(newComment) 
     }
