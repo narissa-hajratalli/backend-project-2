@@ -3,6 +3,9 @@
 ## Live Website
 https://thecolorofcare.netlify.app/
 
+## Frontend development
+https://github.com/narissa-hajratalli/frontend-project-2
+
 ## Project Schedule
 
 |  Day | Deliverable | Status
